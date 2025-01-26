@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
-
+    <!-- Tailwind CSS -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <header>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/81ce6bd512.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    
+        .manrope-font{
+            font-family: "Manrope", serif;
+        }
 
+
+        /* *{
+            border: 1px dashed black;
+        } */
+    </style>
+
+</head>
+<body class="manrope-font">
+    <!-- banner -->
+    <header class="flex justify-between items-center flex-col gap-5 max-w-2xl m-auto py-8 md:max-w-4xl  md:flex-row md:text-left md:py-15 lg:max-w-360">
+        <!-- Description -->
+        <div class="text-center md:text-left md:px-5">
+            <h1 class="text-3xl/10 font-extrabold md:text-5xl/15 lg:text-7xl/20">It's good <br> tea time at <br> The Tea House</h1>
+            <p class="py-4 text-base text-gray-400 md:text-xl md:py-6 lg:text-2xl lg:py-8">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <!-- Explore more button div -->
+            <div class="flex justify-center md:justify-normal">
+                <button class="manrope-font flex items-center gap-2 bg-linear-to-r from-orange-400 to-red-500 text-white text-sm font-bold p-3 rounded-xl md:p-4 lg:p-5 lg:text-base">Explore More <img src="images/arrow.png" alt=""></button>
+            </div>
+        </div>
+        <!-- image -->
+        <div class="relative m-auto px-5">
+            <div>
+                <img class="w-full object-cover" src="images/banner.png" alt="banner picture">
+            </div>
+            <div class="flex items-center justify-center gap-2 p-3 bg-fuchsia-300 rounded-3xl shadow-lg max-w-45 absolute -bottom-5 left-10">
+                <i class="fa-solid fa-star text-amber-200"></i>
+                <div>
+                    <h2 class="text-sm font-extrabold md:text-lg">5.00</h2>
+                    <p class="text-xs font-semibold text-gray-600">Trust Pilot Ratings</p>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
